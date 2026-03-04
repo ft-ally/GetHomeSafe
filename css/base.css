@@ -1,0 +1,48 @@
+/*Here i will add the containers for css
+Shoutout to Freek for this sheet inspiration :) */
+
+/*===GENERAL COLORS AND VARIABLES===*/
+:root {
+    --blue: #3AA2DB;
+    --lightpurple: #e9e4ff;
+	--background: #f3f1fdfd;
+    --darkgreen: #165634;
+    --purple: #B73188;
+    --pink: #e83e8c;
+    --red: #E52A2D;
+}
+
+/*===HEADER===*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--lightpurple);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+#header-logo {
+    display: block;
+}
+
+/*===MAP CONTAINER===*/
+.map-container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===GENERAL===*/
