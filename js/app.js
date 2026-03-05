@@ -1,6 +1,10 @@
 import tt from '@tomtom-international/web-sdk-maps';
 import '@tomtom-international/web-sdk-maps/dist/maps.css';
-import { attachClickListener } from './utils.js';
+import { attachClickListener, setupWelcome } from './utils.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupWelcome();
+});
 
 const map = tt.map({
     key: import.meta.env.VITE_API_KEY,
@@ -10,7 +14,6 @@ const map = tt.map({
 });
 
 let locations = [];
-
 
 map.on('click', (event) => {
 	console.log('Map clicked', event.lngLat);
